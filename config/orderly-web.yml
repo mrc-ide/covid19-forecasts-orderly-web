@@ -83,7 +83,7 @@ web:
   image:
     repo: vimc
     name: orderly-web
-    tag: master
+    tag: main
     migrate: orderlyweb-migrate
     admin: orderly-web-user-cli
     css-generator: orderly-web-css-generator
