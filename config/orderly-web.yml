@@ -55,7 +55,7 @@ orderly:
     repo: mrcide
     name: covid19-forecasts-orderly
     worker_name: covid19-forecasts-orderly
-    tag: latest
+    tag: main
   initial:
     source: clone
     url: https://github.com/mrc-ide/covid19-forecasts-orderly
