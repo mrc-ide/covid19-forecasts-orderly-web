@@ -64,7 +64,7 @@ orderly:
     private: VAULT:secret/covid19-forecasts/outputs/deploy-key:private
   workers: 1
   env:
-    ORDERLY_API_SERVER_IDENTITY: oldreal
+    ORDERLY_API_SERVER_IDENTITY: production
     ## VIMC-3692
     VAULT_AUTH_GITHUB_TOKEN: mustexist
     MC_CORES: 4
@@ -109,8 +109,8 @@ web:
     github_org: mrc-ide
     github_team: covid19-forecasts
     github_oauth:
-      id: VAULT:secret/covid19-forecasts/oauth/real:id
-      secret: VAULT:secret/covid19-forecasts/oauth/real:secret
+      id: VAULT:secret/covid19-forecasts/oauth:id
+      secret: VAULT:secret/covid19-forecasts/oauth:secret
     fine_grained: false
     montagu: false
   ## Optional sass variables to override default styles. Should be a
