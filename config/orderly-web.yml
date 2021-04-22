@@ -59,9 +59,6 @@ orderly:
   initial:
     source: clone
     url: https://github.com/mrc-ide/covid19-forecasts-orderly
-  ssh:
-    public: VAULT:secret/covid19-forecasts/outputs/deploy-key:public
-    private: VAULT:secret/covid19-forecasts/outputs/deploy-key:private
   workers: 1
   env:
     ORDERLY_API_SERVER_IDENTITY: production
