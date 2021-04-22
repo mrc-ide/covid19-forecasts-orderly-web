@@ -5,10 +5,9 @@ if [[ $# -ne 1 ]] ; then
     exit 1
 fi
 
-if [[ "$1" = "testing" ]] || [[ "$1" = "real" ]] || \
-       [[ "$1" = "azure" ]] || [[ "$1" = "dev" ]]; then
+if [[ "$1" = "real" ]] ; then
     echo $1 > instance
 else
-    echo 'INSTANCE_NAME must be one of [testing, real, azure, dev]'
+    echo 'INSTANCE_NAME must be one of [real]'
     exit 1
 fi
