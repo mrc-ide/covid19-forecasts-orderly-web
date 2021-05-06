@@ -1,12 +1,3 @@
 #!/usr/bin/env bash
 set -e
-if [ ! -f instance ]; then
-    echo 'You must run ./setup to configure the instance name'
-    exit 1
-fi
-
-INSTANCE=$(cat instance)
-orderly-web start ./config --extra $INSTANCE --pull "$@"
-if [ $INSTANCE = "real" ]; then
-    ./scripts/copy_keys
-fi
+orderly-web start ./config --pull "$@"
